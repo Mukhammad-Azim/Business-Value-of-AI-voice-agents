@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Annual Financial Dataset Viewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --bg: #0b0f1a; 
+            --card: #161b2a; 
+            --text: #e2e8f0; 
+            --muted: #94a3b8; 
+            --accent: #818cf8; 
+            --border: #1e293b;
+            --pos: #10b981;
+            --neg: #f43f5e;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            padding: 40px; 
+            margin: 0;
+            line-height: 1.5;
+        }
+        .container { 
+            max-width: 1600px; 
+            margin: 0 auto; 
+            background: var(--card); 
+            border-radius: 16px; 
+            padding: 32px; 
+            border: 1px solid var(--border); 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+        h1 { 
+            font-family: 'Outfit', sans-serif; 
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            font-size: 2.5rem; 
+        }
+        .badge {
+            background: rgba(129, 140, 248, 0.1);
+            color: var(--accent);
+            padding: 6px 12px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .table-wrapper { 
+            overflow-x: auto; 
+            border-radius: 8px;
+            background: #0b0f1a;
+            border: 1px solid var(--border);
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            font-size: 0.85rem; 
+            white-space: nowrap;
+        }
+        th { 
+            text-align: left; 
+            background: #1e293b; 
+            color: var(--muted); 
+            padding: 14px 20px; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em; 
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        td { 
+            padding: 14px 20px; 
+            border-bottom: 1px solid var(--border); 
+        }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: rgba(255, 255, 255, 0.03); }
+        
+        .Better { color: #10b981; font-weight: 700; }
+        .Rocket { color: #f43f5e; font-weight: 700; }
+        
+        .numeric { 
+            text-align: right; 
+            font-family: 'JetBrains Mono', 'Fira Code', monospace; 
+            color: #f1f5f9;
+        }
+        
+        .pct-pos { color: var(--pos); font-weight: 600; }
+        .pct-neg { color: var(--neg); font-weight: 600; }
+        
+        .null { color: var(--muted); opacity: 0.2; }
+        
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Longitudinal Dataset</h1>
+            <div class="badge">Annual FY Actuals Only</div>
+        </header>
+        <div class="table-wrapper">
+            <table>
+                <thead><tr><th>Company</th><th>Year</th><th>Revenue</th><th>Total Expenses</th><th>Net Income</th><th>Op Cash Flow</th><th>Total Assets</th><th>Total Liabilities</th><th>Total Equity</th><th>Employees</th><th>Profit Margin</th><th>Expense Ratio</th><th>Revenue per Employee</th><th>Equity Ratio</th><th>Rev Growth</th></tr></thead><tbody><tr><td class="Better">Better</td><td class="">2021</td><td class="">1200.000</td><td class="numeric">1501.300</td><td class="numeric">-301.300</td><td class="numeric">-250.000</td><td class="numeric">1105.000</td><td class="numeric">864.000</td><td class="numeric">241.000</td><td class="numeric">10400</td><td class="numeric">-0.2511</td><td class="numeric">1.2511</td><td class="numeric">0.115385</td><td class="numeric">0.2181</td><td class="numeric"><span class="null">---</span></td></tr><tr><td class="Better">Better</td><td class="">2022</td><td class="">378.023</td><td class="numeric">1236.943</td><td class="numeric">-877.077</td><td class="numeric">938.251</td><td class="numeric">1083.352</td><td class="numeric">1251.255</td><td class="numeric">-604.183</td><td class="numeric">2100</td><td class="numeric">-2.3202</td><td class="numeric">3.2721</td><td class="numeric">0.180011</td><td class="numeric">-0.5577</td><td class="numeric">-0.6850</td></tr><tr><td class="Better">Better</td><td class="">2023</td><td class="">76.820</td><td class="numeric">368.096</td><td class="numeric">-536.420</td><td class="numeric">-159.720</td><td class="numeric">905.554</td><td class="numeric">782.954</td><td class="numeric">122.600</td><td class="numeric">820</td><td class="numeric">-6.9828</td><td class="numeric">4.7917</td><td class="numeric">0.093683</td><td class="numeric">0.1354</td><td class="numeric">-0.7968</td></tr><tr><td class="Better">Better</td><td class="">2024</td><td class="">108.488</td><td class="numeric">313.928</td><td class="numeric">-206.290</td><td class="numeric">-379.971</td><td class="numeric">913.057</td><td class="numeric">971.227</td><td class="numeric">-58.170</td><td class="numeric">1250</td><td class="numeric">-1.9015</td><td class="numeric">2.8937</td><td class="numeric">0.086790</td><td class="numeric">-0.0637</td><td class="numeric">0.4122</td></tr><tr><td class="Better">Better</td><td class="">2025</td><td class="">164.872</td><td class="numeric">330.691</td><td class="numeric">-165.872</td><td class="numeric">-166.575</td><td class="numeric">1505.434</td><td class="numeric">1468.251</td><td class="numeric">37.183</td><td class="numeric">1329</td><td class="numeric">-1.0061</td><td class="numeric">2.0057</td><td class="numeric">0.124057</td><td class="numeric">0.0247</td><td class="numeric">0.5197</td></tr><tr><td class="Rocket">Rocket</td><td class="">2018</td><td class="">4200.000</td><td class="numeric">3600.000</td><td class="numeric">600.000</td><td class="numeric">50.000</td><td class="numeric">10000.000</td><td class="numeric">7000.000</td><td class="numeric">3000.000</td><td class="numeric">26000</td><td class="numeric">0.1429</td><td class="numeric">0.8571</td><td class="numeric">0.161538</td><td class="numeric">0.3000</td><td class="numeric"><span class="null">---</span></td></tr><tr><td class="Rocket">Rocket</td><td class="">2019</td><td class="">5100.000</td><td class="numeric">4164.700</td><td class="numeric">897.100</td><td class="numeric">75.000</td><td class="numeric">12751.600</td><td class="numeric">9236.000</td><td class="numeric">3515.600</td><td class="numeric">26000</td><td class="numeric">0.1759</td><td class="numeric">0.8166</td><td class="numeric">0.196154</td><td class="numeric">0.2757</td><td class="numeric">0.2143</td></tr><tr><td class="Rocket">Rocket</td><td class="">2020</td><td class="">15650.067</td><td class="numeric">6118.410</td><td class="numeric">9399.276</td><td class="numeric">-1677.370</td><td class="numeric">37534.602</td><td class="numeric">29652.446</td><td class="numeric">7882.156</td><td class="numeric">26000</td><td class="numeric">0.6006</td><td class="numeric">0.3910</td><td class="numeric">0.601926</td><td class="numeric">0.2100</td><td class="numeric">2.0686</td></tr><tr><td class="Rocket">Rocket</td><td class="">2021</td><td class="">12914.466</td><td class="numeric">6729.565</td><td class="numeric">6072.163</td><td class="numeric">7743.928</td><td class="numeric">32774.895</td><td class="numeric">23015.363</td><td class="numeric">9759.532</td><td class="numeric">26000</td><td class="numeric">0.4702</td><td class="numeric">0.5211</td><td class="numeric">0.496710</td><td class="numeric">0.2978</td><td class="numeric">-0.1748</td></tr><tr><td class="Rocket">Rocket</td><td class="">2022</td><td class="">5838.493</td><td class="numeric">5096.582</td><td class="numeric">699.933</td><td class="numeric">10823.495</td><td class="numeric">20082.212</td><td class="numeric">11606.663</td><td class="numeric">8475.549</td><td class="numeric">18500</td><td class="numeric">0.1199</td><td class="numeric">0.8729</td><td class="numeric">0.315594</td><td class="numeric">0.4220</td><td class="numeric">-0.5479</td></tr><tr><td class="Rocket">Rocket</td><td class="">2023</td><td class="">3799.269</td><td class="numeric">4202.166</td><td class="numeric">-390.080</td><td class="numeric">110.329</td><td class="numeric">19231.740</td><td class="numeric">10930.030</td><td class="numeric">8301.710</td><td class="numeric">14700</td><td class="numeric">-0.1027</td><td class="numeric">1.1060</td><td class="numeric">0.258454</td><td class="numeric">0.4317</td><td class="numeric">-0.3493</td></tr><tr><td class="Rocket">Rocket</td><td class="">2024</td><td class="">5100.798</td><td class="numeric">4433.000</td><td class="numeric">635.828</td><td class="numeric">-2629.239</td><td class="numeric">24510.063</td><td class="numeric">15466.683</td><td class="numeric">9043.380</td><td class="numeric">14200</td><td class="numeric">0.1247</td><td class="numeric">0.8691</td><td class="numeric">0.359211</td><td class="numeric">0.3690</td><td class="numeric">0.3426</td></tr><tr><td class="Rocket">Rocket</td><td class="">2025</td><td class="">6695.000</td><td class="numeric">6909.000</td><td class="numeric">-234.000</td><td class="numeric">-3927.000</td><td class="numeric">60685.000</td><td class="numeric">37787.000</td><td class="numeric">22898.000</td><td class="numeric">23500</td><td class="numeric">-0.0350</td><td class="numeric">1.0320</td><td class="numeric">0.284894</td><td class="numeric">0.3773</td><td class="numeric">0.3125</td></tr></tbody></table></div></div></body></html>

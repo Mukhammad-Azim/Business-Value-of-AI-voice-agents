@@ -1,0 +1,22 @@
+# Jupyter autosaves and execution metadata. These shadow files
+# preserve out-of-date copies of notebooks and reports (e.g. older
+# RQ2 wording) and should not be tracked.
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
