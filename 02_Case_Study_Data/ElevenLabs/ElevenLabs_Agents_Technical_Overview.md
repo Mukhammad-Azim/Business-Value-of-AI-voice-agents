@@ -83,5 +83,6 @@ ElevenAgents (now branded "ElevenLabs Agents") is a platform for building, deplo
 
 ---
 
-## Relevance to Thesis
-This documentation confirms: (1) the 4-component pipeline architecture claimed in Chapter 4 is accurate; (2) ElevenLabs provides the enterprise security infrastructure (SOC2, GDPR, Zero Retention) required for financial services deployment; (3) the "Agent Workflows" feature supports the graph-based conversation design described for Betsy; (4) tool-calling capability enables the Tinman API integration pattern described in the case study.
+## Notes on Architecture Coverage
+
+The documentation confirms: (1) the 4-component pipeline architecture is consistent with the case study description in the thesis; (2) ElevenLabs provides enterprise security infrastructure (SOC2, GDPR, Zero Retention) suitable for financial services; (3) the "Agent Workflows" feature supports graph-based conversation design as described for Betsy; (4) tool-calling capability enables the Tinman API integration pattern described in the case study.

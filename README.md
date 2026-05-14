@@ -34,22 +34,19 @@ Business-Value-of-AI-voice-agents/
 │   └── Financial_Industry/     # Mortgage Bankers Association & industry benchmarks
 │
 ├── 03_Drafts/                  # Thesis drafts (Word format)
-│   ├── Main_Draft_FULL.docx    # Complete thesis draft
-│   └── Backup/                 # Version backups
 │
-├── 04_Notes/                   # Research notes, memos, and planning documents
+├── 04_Notes/                   # Research notes and memos
 │
 ├── 05_Code/                    # All analytical code
 │   ├── requirements.txt        # Python dependencies (pinned)
 │   ├── financial_metric_analysis.ipynb      # SEC financial metrics analysis (Figures 5.1–5.3)
 │   ├── better_reviews_topic_modeling.ipynb  # BERTopic NLP analysis (Figures 5.4–5.6)
 │   ├── cleaning_reviews.ipynb  # Trustpilot review cleaning pipeline
-│   ├── apply_citation_audit.py # Citation consistency checker
-│   ├── apply_thesis_cleanup.py # Thesis structural cleanup utility
 │   └── Data Extraction code/   # SEC PDF extraction scripts
 │       ├── extract_pdf_texts.py        # PDF text extraction from SEC filings
-│       ├── build_dataset_v4.py         # Compiles financial_dataset_annual.csv
-│       └── financial_dataset_documentation.md  # Dataset audit trail & provenance
+│       ├── extract_s1.py               # S-1/S-4 extraction helper
+│       ├── finalize_draft.py           # Draft assembly utility
+│       └── financial_dataset_documentation.md  # Dataset provenance notes
 │
 ├── 06_Data/                    # Processed, analysis-ready datasets
 │   ├── financial_dataset_annual.csv    # Annual SEC-extracted financials (Better + Rocket, 2018–2025)
@@ -59,19 +56,18 @@ Business-Value-of-AI-voice-agents/
 │       └── better_trustpilot_clean.csv # Cleaned & pre-processed corpus (1,915 reviews)
 │
 ├── 07_Outputs/figures/         # All thesis figures (PNG + interactive HTML)
-│   ├── financial/              # Figures 5.1–5.3 and OLI appendix figure
-│   └── NLP/                    # Figures 5.4–5.6 and appendix topic maps
+│   ├── financial/              # Figures 5.1–5.3 and appendix figures
+│   ├── NLP/                    # Figures 5.4–5.6 and appendix topic maps
+│   └── design_pattern/         # Figure 6.1 — design pattern diagram
 │
-├── 08_Cleanup_Report/          # Automated structural analysis reports
-├── 09_Citation_Audit/          # Reference list audit outputs
-└── 10_Thesis_Improvement_Report/  # Chapter-level critical analyses and revision notes
+└── 08_Citation_Audit/          # Reference list audit and source reliability table
 ```
 
 ---
 
 ## Key Datasets
 
-### `Data/financial_dataset_annual.csv`
+### `06_Data/financial_dataset_annual.csv`
 Annual financial metrics extracted from SEC filings for both companies.
 
 | Field | Description |
@@ -87,9 +83,9 @@ Annual financial metrics extracted from SEC filings for both companies.
 | `Expense_Ratio` | Total expenses / revenue |
 | `Funded_Loan_Volume` | Funded mortgage volume (billions USD) |
 
-**Sources:** Better.com S-1, 10-K filings 2023–2025; Rocket Companies 10-K filings 2020–2025. All values in millions USD. Full audit trail in `05_Code/Data Extraction code/financial_dataset_documentation.md`.
+**Sources:** Better.com S-1, 10-K filings 2023–2025; Rocket Companies 10-K filings 2020–2025. All values in millions USD. Full provenance notes in `05_Code/Data Extraction code/financial_dataset_documentation.md`.
 
-### `Data/NLP/better_trustpilot_clean.csv`
+### `06_Data/NLP/better_trustpilot_clean.csv`
 Cleaned Trustpilot review corpus used for all NLP analyses.
 
 | Field | Description |
@@ -112,14 +108,14 @@ Cleaned Trustpilot review corpus used for all NLP analyses.
 SEC PDFs  ──►  05_Code/Data Extraction code/extract_pdf_texts.py
                              │
                              ▼
-               05_Code/Data Extraction code/build_dataset_v4.py
+               05_Code/Data Extraction code/extract_s1.py
                              │
                              ▼
                06_Data/financial_dataset_annual.csv
                              │
                              ▼
                05_Code/financial_metric_analysis.ipynb
-               (Figures 5.1, 5.2, 5.3, OLI  ──►  07_Outputs/figures/financial/)
+               (Figures 5.1, 5.2, 5.3  ──►  07_Outputs/figures/financial/)
 
 Trustpilot  ──►  06_Data/NLP/Better_Reviews.csv
                              │
@@ -138,7 +134,7 @@ Trustpilot  ──►  06_Data/NLP/Better_Reviews.csv
 
 ## Generated Figures
 
-All thesis figures are exported to `outputs/figures/` in both PNG and interactive HTML formats.
+All thesis figures are exported to `07_Outputs/figures/` in both PNG and interactive HTML formats.
 
 ### Financial Figures (`07_Outputs/figures/financial/`)
 
@@ -168,7 +164,7 @@ All thesis figures are exported to `outputs/figures/` in both PNG and interactiv
 ### Requirements
 
 - Python 3.10–3.12
-- All dependencies pinned in `08_Code/requirements.txt`
+- All dependencies pinned in `05_Code/requirements.txt`
 
 ```bash
 git clone https://github.com/Mukhammad-Azim/Business-Value-of-AI-voice-agents.git

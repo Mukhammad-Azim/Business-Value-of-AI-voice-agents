@@ -1,10 +1,10 @@
-# Deliverable F — Source Reliability Table
+# Source Reliability Table
 
-> **Purpose**: Classify every source by reliability tier and document whether the in-text wording should be qualified. The thesis must distinguish **audited fact** (SEC filings, peer-reviewed empirical findings) from **management claim** (company press releases, earnings calls, investor presentations) from **vendor claim** (ElevenLabs/BusinessWire promotional content) from **contextual support** (news, industry reports, blog posts) from **academic theory** (peer-reviewed conceptual or framework papers).
+This table classifies each source used in the thesis by reliability tier and indicates whether the corresponding in-text wording requires qualification. The thesis distinguishes five categories of evidence: **audited fact** (SEC filings, peer-reviewed empirical findings), **management claim** (press releases, earnings calls, investor presentations), **vendor claim** (promotional material from ElevenLabs, BusinessWire, etc.), **contextual support** (news coverage, industry reports, blog posts), and **academic theory** (peer-reviewed conceptual or framework papers).
 
 ---
 
-## F.1 Reliability Tiers (Definitions)
+## 1. Reliability Tiers
 
 | Tier | Meaning | Examples |
 |---|---|---|
@@ -16,12 +16,12 @@
 
 ---
 
-## F.2 Source-by-Source Reliability Classification
+## 2. Source-by-Source Classification
 
-| # | Source | Source Type | Reliability Tier | What It Supports | Wording in Thesis Should Be Qualified? |
+| # | Source | Source Type | Reliability Tier | What It Supports | Wording Should Be Qualified? |
 |---|---|---|---|---|---|
 | 1 | Better Home & Finance Holding Company (2026) — Form 10-K FY 2025 | SEC filing — audited annual report | **High** | All audited GAAP financials: revenue, expenses, net income, segment results, employee count, AR/AP, balance sheet items | No — audited fact |
-| 2 | Better Home & Finance Holding Company (2024b) — Q3 2024 8-K Exh 99.1 | SEC filing — earnings release exhibit (unaudited) | **Medium-high** for the financial line items / **Medium** for management commentary | Q3 2024 quarterly numbers; CEO/CFO narrative on Betsy launch | Qualify management commentary ("Better's management reports…"); financial line items can be cited directly because they are SEC-filed |
+| 2 | Better Home & Finance Holding Company (2024b) — Q3 2024 8-K Exh 99.1 | SEC filing — earnings release exhibit (unaudited) | **Medium-high** for financial line items / **Medium** for management commentary | Q3 2024 quarterly numbers; CEO/CFO narrative on Betsy launch | Qualify management commentary ("Better's management reports…"); financial line items can be cited directly because they are SEC-filed |
 | 3 | Better Home & Finance Holding Company (2025a) — Q4/FY 2024 release | Earnings press release | **Medium-high** financial; **Medium** management commentary | FY 2024 unaudited numbers; "115k Betsy interactions/month"; "$2,000 sales-labor savings" claim | Qualify operating metrics ("management reports approximately 115,000 monthly customer interactions, an unaudited figure") |
 | 4 | Better Home & Finance Holding Company (2025b, 2025c) — Q1 / Q2 2025 8-K exhibits | SEC filing — earnings release | **Medium-high** financial / **Medium** management | Q1 / Q2 2025 numbers; updated NPS claim (39 → 64); Betsy interaction-volume disclosures | Qualify NPS and interaction-volume claims as company-reported, not independently verified |
 | 5 | Better HoldCo, Inc. (2023) — Form S-1/A | SEC filing — registration statement (audited financial sections) | **High** for audited statements; **Medium** for risk-factor narrative | Pre-merger 2021–2022 audited financials; Tinman platform description; risk factors | No qualification needed for audited sections |
@@ -66,29 +66,29 @@
 | 44 | Jang, Kim, & Baek (2021) — *TASM* | Peer-reviewed academic article | **High** | Innovation-activity mediation in tech parks | No qualification needed |
 | 45 | Nunes (2024) — HousingWire | News article | **Contextual** | Independent reportage of Betsy launch | Use as contextual triangulation, not primary evidence; cite alongside Better (2024a) |
 | 46 | Primack (2021) — Axios | News article | **Contextual** | Pre-merger SPAC-delay context | Use as contextual triangulation |
-| 47 | Qualtrics (2024) | Industry benchmark report | **Medium** (vendor self-published) | NPS industry benchmarks | Mark as **unresolved** in Deliverable E; recommend replacement with verifiable benchmark |
+| 47 | Qualtrics (2024) | Industry benchmark report | **Medium** (vendor self-published) | NPS industry benchmarks | Unresolved — recommend replacement with a verifiable benchmark source |
 
 ---
 
-## F.3 Specific Caveats Required in Thesis Wording
+## 3. Specific Caveats for Key Claims
 
-The user's PART 7 instruction lists specific claims that must be qualified. Each is mapped to required wording below.
+The following wording should be applied in the thesis wherever these claims appear (primarily in §5.4.2 and the discussion/limitations section).
 
-| Claim in Thesis | Required Caveat (insert in §5.4.2 or §5.6) |
+| Claim | Suggested Qualification |
 |---|---|
-| **NPS 39 → 64** improvement | "Better's investor materials report a Net Promoter Score improvement from approximately 39 to approximately 64 over the relevant post-deployment period (Better Home & Finance Holding Company, 2025a, 2025b, 2026). This figure is **management-reported and not independently audited**, and is collected through Better's own customer-feedback channels, which differ in sampling, framing, and self-selection from third-party feedback such as Trustpilot." |
-| **115,000 → 700,000 monthly customer interactions** | "Joint disclosures by Better and ElevenLabs (2026) report a scale increase in Betsy's monthly customer interactions from approximately 115,000 to approximately 700,000 between the Q4 2024 and Q1 2026 reporting windows. These figures are **company-and-vendor-reported, not independently audited**, and originate from a joint promotional release; they should therefore be interpreted as directional rather than as audited operating metrics." |
-| **+30% conversion uplift** | "The +30% conversion-uplift figure is reported in a joint Better–ElevenLabs press release (2026) and is **not independently audited**. It is included as a directional indicator of the AI deployment's commercial impact rather than as a verified causal estimate." |
-| **Cost-to-originate ~ $4,900** (Better) vs **~$9,000** (industry) | "The author-estimated cost-to-originate of approximately $4,900 per loan is a **proxy calculation** derived from Better's audited total expenses divided by funded-loan count, and is not a directly disclosed audited metric. The industry-average $9,000 figure is taken from Mortgage Bankers Association (2024a) and corroborated by Freddie Mac (2024) and Better's own management commentary (Better Home & Finance Holding Company, 2024a)." |
+| **NPS 39 → 64** improvement | "Better's investor materials report a Net Promoter Score improvement from approximately 39 to approximately 64 over the relevant post-deployment period (Better Home & Finance Holding Company, 2025a, 2025b, 2026). This figure is management-reported and not independently audited, and is collected through Better's own customer-feedback channels, which differ in sampling, framing, and self-selection from third-party feedback such as Trustpilot." |
+| **115,000 → 700,000 monthly customer interactions** | "Joint disclosures by Better and ElevenLabs (2026) report a scale increase in Betsy's monthly customer interactions from approximately 115,000 to approximately 700,000 between the Q4 2024 and Q1 2026 reporting windows. These figures are company-and-vendor-reported, not independently audited, and originate from a joint promotional release; they should therefore be interpreted as directional rather than as audited operating metrics." |
+| **+30% conversion uplift** | "The +30% conversion-uplift figure is reported in a joint Better–ElevenLabs press release (2026) and is not independently audited. It is included as a directional indicator of the AI deployment's commercial impact rather than as a verified causal estimate." |
+| **Cost-to-originate ~$4,900 (Better) vs ~$9,000 (industry)** | "The author-estimated cost-to-originate of approximately $4,900 per loan is a proxy calculation derived from Better's audited total expenses divided by funded-loan count, and is not a directly disclosed audited metric. The industry-average $9,000 figure is taken from Mortgage Bankers Association (2024a) and corroborated by Freddie Mac (2024) and Better's own management commentary (Better Home & Finance Holding Company, 2024a)." |
 | **Trustpilot sentiment decline** | "The 0.642 → 0.515 VADER mean shift on Trustpilot reviews is computed on a self-selected, third-party-platform sample and reflects only customers who chose to publicly post reviews; it is therefore not representative of all Better customers and should be read as a directional signal alongside, not as a substitute for, internal company metrics." |
-| **Topic-model shifts (Cost/Rates, etc.)** | "Topic-model shifts are computed on a post-Betsy sample of n = 169 reviews, approximately one-tenth the size of the pre-Betsy sample (n = 1,746). After Bonferroni correction across seven keyword groups, **only the Cost/Rates shift survives** at the 0.05 level. Other shifts are reported as descriptive only." |
-| **Any ElevenLabs / BusinessWire claims** | "Operating metrics drawn from ElevenLabs' case study and joint Better–ElevenLabs press releases are **vendor-issued and promotional** in nature. They are reported here for technical-implementation context but should not be read as independently verified outcome measures." |
-| **Better IR performance claims** | "All Better Investor Relations performance claims that exceed audited GAAP disclosures (e.g., interaction volumes, NPS, % conversion uplift) should be read as **management-attested and unaudited**. Audited counterparts in the Form 10-K (Better Home & Finance Holding Company, 2026) take precedence where the two diverge." |
+| **Topic-model shifts (Cost/Rates, etc.)** | "Topic-model shifts are computed on a post-Betsy sample of n = 169 reviews, approximately one-tenth the size of the pre-Betsy sample (n = 1,746). After Bonferroni correction across seven keyword groups, only the Cost/Rates shift survives at the 0.05 level. Other shifts are reported as descriptive only." |
+| **Any ElevenLabs / BusinessWire claims** | "Operating metrics drawn from ElevenLabs' case study and joint Better–ElevenLabs press releases are vendor-issued and promotional in nature. They are reported here for technical-implementation context but should not be read as independently verified outcome measures." |
+| **Better IR performance claims** | "All Better Investor Relations performance claims that exceed audited GAAP disclosures (e.g., interaction volumes, NPS, % conversion uplift) should be read as management-attested and unaudited. Audited counterparts in the Form 10-K (Better Home & Finance Holding Company, 2026) take precedence where the two diverge." |
 
 ---
 
-## F.4 Source-Reliability Paragraph (Drop-In Text for §5.6 or §5.7)
+## 4. Evidence-Reliability Paragraph (for §5.6 / §5.7)
 
-The following paragraph can be inserted near the start of the Discussion / Limitations subsection. See Deliverable G, item G.8 for the exact placement.
+The paragraph below can be inserted near the opening of the Discussion or Limitations subsection to signal the evidential hierarchy to the reader.
 
 > **On the reliability of evidence used in this chapter.** The empirical findings reported here draw on five categories of source. *Audited fact* — primarily the FY 2025 Form 10-K (Better Home & Finance Holding Company, 2026) and pre-merger audited statements in the S-1/A (Better HoldCo, Inc., 2023) — anchors all GAAP financial line items, segment results, employee counts, and balance-sheet movements. *Management claim* — quarterly earnings releases (Better Home & Finance Holding Company, 2024b, 2025a, 2025b, 2025c) and investor-relations webpages — supplies forward-looking guidance, operating metrics not separately audited, and management commentary on the Betsy deployment. *Vendor claim* — the joint Better–ElevenLabs press release (2026) and the ElevenLabs case study (2026) — supplies the headline scale and conversion figures and is treated as directional rather than as audited evidence. *Self-selected user-generated content* — Trustpilot reviews aggregated for the NLP analysis — captures public consumer voice but excludes customers who do not post reviews. *Academic theory* — peer-reviewed articles on voice AI, service operations, and technology adoption — frames the interpretation but does not itself supply Better-specific empirical evidence. The chapter signals these distinctions explicitly in the wording attached to each claim.

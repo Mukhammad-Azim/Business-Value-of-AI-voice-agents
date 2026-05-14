@@ -1,6 +1,4 @@
-# Jupyter autosaves and execution metadata. These shadow files
-# preserve out-of-date copies of notebooks and reports (e.g. older
-# RQ2 wording) and should not be tracked.
+# Jupyter autosaves and execution metadata
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
